@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,10 +26,39 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Roboto', sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Apply Raleway font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Apply Roboto font to all paragraphs and other text elements */
+body, p, span, div, a, li, button, input, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Remove underline from all links by default */
+a, Link {
+  @apply no-underline;
+}
+
+/* Reset list styles */
+ul {
+  @apply list-none p-0 m-0;
+}
+
+li {
+  @apply inline-block;
 }

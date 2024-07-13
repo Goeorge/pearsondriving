@@ -1,0 +1,21 @@
+/* styles/slick.css */
+
+.slick-slide {
+    margin: 0 1px;
+  }
+  
+  .slick-list {
+    margin: 0 -1px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    bottom: 0;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000;
+  }
+  
