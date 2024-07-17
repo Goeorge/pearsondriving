@@ -7,7 +7,7 @@ import { SlCalender } from "react-icons/sl";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-50 py-20">
-      <div className="container mx-auto px-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="container mx-auto px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">About Company</h3>
           <p className="text-gray-600 mb-4">
@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
         </div>
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Our Courses</h3>
-          <ul className=" space-y-2 text-orange">
-            <li className='flex items-center space-x-2 '>
+          <ul className=" space-y-2 pl-0 text-orange">
+            <li className='flex items-start space-x-2 '>
                 {/* <FaLongArrowAltRight className="text-orange "/> */}
                 <Link href="#" className="hover:text-green text-gray-600 no-underline">Adult In Car Lessons</Link>
             </li>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         </div>
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Recent Posts</h3>
-          <ul className="text-gray-600 space-y-4">
+          <ul className="text-gray-600 space-y-4 pl-0 ">
             <li className="flex">
               <Image src="/blog/image-1-1.webp" alt="Post" className="w-16 h-16 rounded mr-4" width={60} height={60}/>
               <div>

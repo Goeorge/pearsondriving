@@ -10,8 +10,8 @@ import {
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen bg-white flex flex-col md:flex-row items-center justify-evenly p-4">
-      <div className="absolute left-0 top-2/4 transform -translate-y-1/2 flex flex-col items-center space-y-4">
+    <section className="relative h-screen bg-white flex flex-col lg:flex-row items-center justify-evenly p-4">
+      <div className="hidden absolute left-0 top-2/4 transform -translate-y-1/2 md:flex flex-col items-center space-y-2">
         <div className="rotate-90 text-lg text-orange font-semibold mb-6">
           FOLLOW US
         </div>

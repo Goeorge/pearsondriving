@@ -27,7 +27,7 @@ const Features: React.FC = () => {
   return (
     <section className="p-6 bg-white">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row md:justify-evenly">
+        <div className="flex flex-col lg:flex-row justify-evenly">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center px-2 py-8 m-4 rounded border shadow-md">
               <div className="mb-4">

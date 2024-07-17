@@ -35,14 +35,14 @@ const SignUpProcess: React.FC = () => {
   return (
     <section className="relative py-20 bg-cover bg-center" style={{ backgroundImage: `url('/hero/signup_bg.webp')` }}>
     <div className="absolute inset-0 bg-black opacity-50"></div>
-    <div className="container mx-auto flex flex-col md:flex-row items-center relative z-10">
-      <div className="md:w-1/2 p-6 flex items-center justify-center">
+    <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
+      <div className="lg:w-1/2 p-6 flex items-center justify-center">
         {/* <Image src="/hero/signup_bg.webp" alt="Sign Up Process" width={500} height={500} className="rounded-lg shadow-lg" /> */}
       </div>
-      <div className="md:w-1/2 p-6">
+      <div className="lg:w-1/2 p-6">
         <div className="mb-4">
           <h2 className="text-white text-lg mb-2">Our Work Process</h2>
-          <h1 className="text-3xl md:text-4xl font-bold text-orange mb-4">Start The Pearson Learning Process</h1>
+          <h1 className="text-3xl lg:text-4xl font-bold text-orange mb-4">Start The Pearson Learning Process</h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {steps.map((step, index) => (

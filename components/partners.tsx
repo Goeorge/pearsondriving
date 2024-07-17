@@ -4,8 +4,8 @@ import Image from "next/image";
 const Partners: React.FC = () => {
   return (
     <section className="py-16">
-      <div className="container mx-auto px-12 text-center">
-        <div className="flex flex-col md:flex-row justify-center space-x-16">
+      <div className="container mx-auto px-4 text-center">
+        <div className="grid grid-cols-2 ml-4 md:flex md:flex-row items-center justify-center md:space-x-12">
           <Image
             src="/blog/logo-1-1.png"
             alt="logo1"

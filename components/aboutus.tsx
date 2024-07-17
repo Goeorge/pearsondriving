@@ -6,22 +6,19 @@ import Link from 'next/link';
 const AboutUs: FC = () => {
   return (
     <section className="bg-white p-6" id='aboutus'>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="w-full lg:w-1/2 flex justify-center mb-6 lg:mb-0">
           <Image src="/normal/about_3_1.png" alt="Driving School" width={500} height={500} />
         </div>
-        <div className="w-full md:w-1/2 md:pl-10">
+        <div className="w-full lg:w-1/2 lg:pl-10">
           <div className="mb-4 flex items-center">
             <span className="font-semibold text-lg text-green mr-2">About Us</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-orange mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-orange mb-4">
             Welcome To Our Driving School & Learn To Drive
           </h1>
           <p className="text-gray-600 mb-6">
           Located in the heart of Nyeri Town, Kenya, Pearson driving school is committed to providing top-notch driving education to our community. We pride ourselves on our comprehensive and personalized approach to teaching, ensuring that each of our students becomes a confident and responsible driver.
-          </p>
-          <p className="text-gray-600 mb-6">
-            `A driving school is a commercial business authorized by DMV’s Bureau of Driver Training Programs to provide driving instruction for hire, which could include behind-the-wheel driving lessons`
           </p>
           <ul className="mb-6 space-y-4">
             <li className="flex items-center">

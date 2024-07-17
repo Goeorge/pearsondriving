@@ -27,10 +27,10 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="bg-white text-black-500 py-10">
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 p-6">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center">
+        <div className="lg:w-1/2 p-6">
           <h2 className="text-green text-lg font-semibold mb-2">Frequently Asked Have Any Question?</h2>
-          <h1 className="text-3xl text-orange md:text-4xl font-bold mb-4">Find Answers In Our List Of Frequently Asked Questions</h1>
+          <h1 className="text-3xl text-orange lg:text-4xl font-bold mb-4">Find Answers In Our List Of Frequently Asked Questions</h1>
           <p className="mb-6">
             Airport driving school were excellent from start to finish in helping me pass my bus test today. My instructor Valise was great, patient and explained everything very well from the first lessons to the last one.
           </p>
@@ -51,7 +51,7 @@ const FAQ: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="md:w-1/2 p-6">
+        <div className="lg:w-1/2 p-6">
           <Image src="/course/course_5_4.png" alt="FAQ" className="rounded-lg shadow-lg" width={600} height={600} />
         </div>
       </div>
