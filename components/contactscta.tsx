@@ -11,7 +11,7 @@ const ContactsCTA: React.FC = () => {
           </div>
           <div className="flex flex-col items-center justify-center">
             <p className="text-gray-600">WhatsApp us any time:</p>
-            <p className="text-xl font-semibold text-orange">+(254)-456-78907</p>
+            <p className="text-lg font-semibold text-orange">+(254)-456-78907</p>
           </div>
         </div>
         <div className="flex items-center justify-start space-x-10 md:space-x-20 lg:space-x-8 mb-4 md:mb-0">
@@ -20,7 +20,7 @@ const ContactsCTA: React.FC = () => {
           </div>
           <div>
             <p className="text-gray-600">Call us any time:</p>
-            <p className="text-xl font-semibold text-orange">+(254)-556-06979</p>
+            <p className="text-lg font-semibold text-orange">+(254)-556-06979</p>
           </div>
         </div>
         <div className="flex items-center justify-start space-x-10 md:space-x-20 lg:space-x-8">
@@ -29,7 +29,7 @@ const ContactsCTA: React.FC = () => {
           </div>
           <div>
             <p className="text-gray-600">Email us any time:</p>
-            <p className="text-xl font-semibold text-orange">info@pearsondriving.co.ke</p>
+            <p className="text-lg font-semibold text-orange">info@pearsondriving.co.ke</p>
           </div>
         </div>
       </div>
