@@ -21,20 +21,20 @@ const AboutUs: FC = () => {
           Located in the heart of Nyeri Town, Kenya, Pearson driving school is committed to providing top-notch driving education to our community. We pride ourselves on our comprehensive and personalized approach to teaching, ensuring that each of our students becomes a confident and responsible driver.
           </p>
           <ul className="mb-6 space-y-4">
-            <li className="flex items-center">
-              <FaCheckCircle className="text-green mr-2" />
+            <li className="flex items-start">
+              <FaCheckCircle className="text-xl text-green mr-2" />
               Experienced Instructors: Our team of certified and experienced instructors is dedicated to providing patient and thorough training. They are well-versed in the latest road safety regulations and driving techniques.
             </li>
-            <li className="flex items-center">
-              <FaCheckCircle className="text-green mr-2" />
+            <li className="flex items-start">
+              <FaCheckCircle className="text-xl text-green mr-2" />
               Comprehensive Courses: We offer a wide range of courses tailored to meet the needs of beginners, intermediate drivers, and those looking to refresh their skills. From theory classes to practical driving lessons, we cover all aspects of driving.
             </li>
-            <li className="flex items-center">
-              <FaCheckCircle className="text-green mr-2" />
+            <li className="flex items-start">
+              <FaCheckCircle className="text-xl text-green mr-2" />
               Flexible Scheduling: We understand that our students have diverse schedules. That’s why we offer flexible lesson timings, including evenings and weekends, to accommodate everyone.
             </li>
-            <li className="flex items-center">
-              <FaCheckCircle className="text-green mr-2" />
+            <li className="flex items-start">
+              <FaCheckCircle className="text-xl text-green mr-2" />
               Affordable Rates: Quality driving education doesn’t have to be expensive. We provide competitive pricing and flexible payment plans to make our courses accessible to everyone.
             </li>
           </ul>

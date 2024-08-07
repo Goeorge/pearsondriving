@@ -27,12 +27,14 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between  p-6 md:px-8 lg:px-20 bg-white border-b border-orange-200 relative">
       <div className="flex items-center justify-center w-full lg:w-auto">
-        <Image
-          src="/brand/pearson-driving-logo.webp"
-          alt="Dride Logo"
-          width={150}
-          height={150}
-        />
+        <Link href='/'>
+          <Image
+            src="/brand/pearson-driving-logo.webp"
+            alt="Dride Logo"
+            width={150}
+            height={150}
+          />
+        </Link>
       </div>
       <div className="flex items-center space-x-6 lg:hidden">
         <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full cursor-pointer">
@@ -68,23 +70,125 @@ const Header = () => {
               About Us
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="#courses"
               className="text-orange hover:text-green no-underline">
               Courses
             </Link>
+          </li> */}
+          <li className="relative group">
+            <Link
+              href="/courses"
+              className="text-orange hover:text-green no-underline">
+              Courses
+            </Link>
+            {/* <ul className="absolute top-0 hidden mt-2 space-y-2 text-base font-normal bg-white shadow-lg group-hover:block">
+              <li>
+                <Link
+                  href="#refresher"
+                  className="block px-6 py-2 text-orange hover:bg-green hover:text-white">
+                  Refresher Course
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#defensive"
+                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
+                  Defensive Driving
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#motorbike"
+                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
+                  Category A-Motorbike
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#light-vehicles"
+                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
+                  Category B-Light Vehicles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#light-trucks"
+                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
+                  Category C-Light Trucks
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#psvs"
+                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
+                  Category D - PSVs
+                </Link>
+              </li>
+            </ul> */}
           </li>
-          <li>
+          {/* <li>
             <Link
               href="#"
               className="text-orange hover:text-green no-underline">
-              Blog
+              News & Updates
             </Link>
+          </li> */}
+          <li className="relative group">
+            <Link
+              href="#help"
+              className="text-orange hover:text-green no-underline">
+              Help Center
+            </Link>
+            {/* <ul className="absolute left-0 hidden mt-2 space-y-2 text-base font-normal bg-white shadow-lg group-hover:block">
+              <li>
+                <Link
+                  href="#prices"
+                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
+                  Prices
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#payment-options"
+                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
+                  Payment Options
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#registration"
+                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
+                  Registration
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#faq"
+                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#news-updates"
+                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
+                  News & Updates
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#downloads"
+                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
+                  Downloads
+                </Link>
+              </li>
+            </ul> */}
           </li>
           <li>
             <Link
-              href="#"
+              href="#formcta"
               className="text-orange hover:text-green no-underline">
               Contact
             </Link>
@@ -128,7 +232,7 @@ const Header = () => {
           <Link
             href="#"
             className="px-4 py-2 text-white font-semibold hover:bg-green bg-orange rounded no-underline">
-            GET CONSULTING
+            ENROLL NOW →
           </Link>
           <div className="cursor-pointer">
             <CiMenuBurger width={64} height={64} className="stroke-green" />

@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const ContactsCTA: React.FC = () => {
   return (
-    <section className="bg-blue-50 py-8 border border-orange ">
+    <section className="bg-blue-50 py-8 border border-orange " id="contacts">
       <div className="flex flex-col lg:flex-row items-center justify-evenly px-16">
         <div className="flex items-center justify-start space-x-10 md:space-x-20 lg:space-x-8 mb-4 lg:justify-evenly  md:mb-0">
           <div className="flex items-center justify-center w-16 h-16 bg-white rounded-md shadow-md">

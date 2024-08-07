@@ -9,7 +9,7 @@ const stats = [
 
 const Stats: React.FC = () => {
   return (
-    <section className="bg-green py-10">
+    <section className="bg-green py-2">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-white">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col items-center text-center px-6 py-4 border-b md:border-b-0 md:border-r border-orange last:border-r-0">

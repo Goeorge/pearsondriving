@@ -38,21 +38,19 @@ const Hero: React.FC = () => {
         <h1 className="text-3xl md:text-6xl ml:text-7xl font-bold text-orange mb-4">
           Drive with Safety <br /> And Control
         </h1>
-        <p className="text-gray-600 mb-6">
-          When coming up with driving school slogans, it is important to <br />think
-          about
-           the main message you want to communicate.
+        <p className="text-gray-700 mb-6 w-2/3 text-wrap">
+        Welcome to Pearson Driving School! Join us and drive with assurance and ease.
         </p>
         <div className="flex space-x-4">
           <Link
             href="#"
             className="bg-green text-white py-2 px-4 rounded hover:bg-orange transition duration-300 no-underline">
-            LEARN MORE
+            EXPLORE COURSES →
           </Link>
           <Link
             href="#"
             className="bg-green text-white py-2 px-4 rounded hover:bg-orange transition duration-300 no-underline">
-            GET ENROLLED
+            ENROLL NOW →
           </Link>
         </div>
       </div>
