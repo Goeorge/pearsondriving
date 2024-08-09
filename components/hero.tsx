@@ -43,14 +43,14 @@ const Hero: React.FC = () => {
         </p>
         <div className="flex space-x-4">
           <Link
-            href="#"
+            href="/courses"
             className="bg-green text-white py-2 px-4 rounded hover:bg-orange transition duration-300 no-underline">
             EXPLORE COURSES →
           </Link>
           <Link
-            href="#"
+            href="#formcta"
             className="bg-green text-white py-2 px-4 rounded hover:bg-orange transition duration-300 no-underline">
-            ENROLL NOW →
+            CONSULT NOW →
           </Link>
         </div>
       </div>

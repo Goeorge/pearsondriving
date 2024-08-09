@@ -63,20 +63,6 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li>
-            <Link
-              href="#aboutus"
-              className="text-orange hover:text-green no-underline">
-              About Us
-            </Link>
-          </li>
-          {/* <li>
-            <Link
-              href="#courses"
-              className="text-orange hover:text-green no-underline">
-              Courses
-            </Link>
-          </li> */}
           <li className="relative group">
             <Link
               href="/courses"
@@ -185,6 +171,13 @@ const Header = () => {
                 </Link>
               </li>
             </ul> */}
+          </li>
+          <li>
+            <Link
+              href="#aboutus"
+              className="text-orange hover:text-green no-underline">
+              About Us
+            </Link>
           </li>
           <li>
             <Link

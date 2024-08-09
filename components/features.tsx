@@ -12,7 +12,7 @@ const features = [
     icon: '/icon/feature_card_4.svg',
   },
   {
-    title: 'Video Classes',
+    title: 'Practical Classes',
     description: 'Brainstorm words related to confidence, and skill.',
     icon: '/icon/feature_card_5.svg',
   },

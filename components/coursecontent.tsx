@@ -1,19 +1,41 @@
 // components/CoursePage.tsx
+'use client'
+
 import React from "react";
 import Image from "next/image";
 
-const CoursePage: React.FC = () => {
+type Course = {
+  id:string;
+  title: string;
+  description: string;
+  price: string;
+  imageUrl: string;
+  theoryHours: string;
+  practicalHours: string;
+  duration: string;
+  level:string;
+}
+
+type CourseContentProps = {
+  coursecontent:Course;
+}
+
+const CourseContent: React.FC<CourseContentProps> = ({coursecontent}) => {
   return (
     <section className="bg-white py-12">
       <div className="container mx-auto px-4">
+      {/* <div className="relative md:w-1/2 p-6">
+                <Image src={coursecontent.imageUrl} alt={coursecontent.title} width={900} height={900} className="w-full h-96 object-cover" />
+                <div className="absolute top-4 left-4 bg-orange text-white px-3 py-1 text-lg font-bold rounded break-after-all">
+                  FROM <br/><span className="text-2xl">{coursecontent.price}</span>
+                </div>
+          </div> */}
         <div className="flex flex-col lg:flex-row justify-between items-start md:px-40">
+        
           <div className="lg:w-2/4">
-            <h2 className="text-4xl font-bold mb-6 text-orange">Course details</h2>
+            <h2 className="text-4xl font-bold mb-6 text-orange">{coursecontent.title}</h2>
             <p className="text-gray-600 mb-6">
-              No one rejects dislikes or avoids pleasure itself because it
-              pleasure but those who do not know how to pursue pleasure but
-              because those who know how to pursue pleasure rationally encounter
-              consequences that are extremely painful desires to obtain.
+              {coursecontent.description}
             </p>
             <p className="text-gray-600 mb-6">
               Avoids pleasure itself because it pleasure but those do not know
@@ -29,8 +51,8 @@ const CoursePage: React.FC = () => {
              <div>
              <div className="bg-orange text-white p-4 rounded-t-lg">
                 <div className="font-bold text-lg">FROM</div>
-                <div className="text-5xl font-extrabold">Ksh.6,400</div>
-                <div className="text-lg">Per Person</div>
+                <div className="text-5xl font-extrabold">{coursecontent.price}</div>
+                {/* <div className="text-lg">Per Person</div> */}
               </div>
              </div>
               <div className="flex flex-col items-start justify-between gap-2 p-2 px-4 py-6">
@@ -46,8 +68,8 @@ const CoursePage: React.FC = () => {
                   <span className="text-yellow-400 text-2xl mb-2">
                     ⭐️⭐️⭐️⭐️⭐️
                   </span>
-                  <span className="text-green-500 font-semibold">
-                    READ FEEDBACK
+                  <span className="text-green-500 font-semibold underline cursor-pointer">
+                    READ REVIEWS
                   </span>
                 </div>
               </div>
@@ -61,12 +83,12 @@ const CoursePage: React.FC = () => {
              <div className="flex items-center mb-4">
                <Image src="/icon/icon-1.png" alt="Theory Icon" width={24} height={24} />
               <span className="ml-2">THEORY SESSION</span>
-              <span className="ml-auto">04 Hours</span>
+              <span className="ml-auto">{coursecontent.theoryHours}</span>
              </div>
             <div className="flex items-center">
               <Image src="/icon/icon-2.png" alt="Practical Icon" width={24} height={24} />
                <span className="ml-2">PRACTICAL SESSION</span>
-               <span className="ml-auto">12 Hours</span>
+               <span className="ml-auto">{coursecontent.practicalHours}</span>
              </div>
            </div>
            <div className="bg-green text-white p-6 rounded">
@@ -87,4 +109,4 @@ const CoursePage: React.FC = () => {
   );
 };
 
-export default CoursePage;
+export default CourseContent;

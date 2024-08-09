@@ -5,7 +5,7 @@ const Formcta: React.FC = () => {
     <section className="py-10" id='formcta'>
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center">       
         <div className="md:w-2/3 w-full md:pl-10">
-          <h2 className="text-3xl font-bold text-orange mb-6 text-center ">Get A <span className="text-green">Free</span> Consultation</h2>
+          <h2 className="text-4xl font-bold text-orange mb-6 text-center ">Enroll <span className="text-green">Now</span> </h2>
           <p className="text-gray-600 mb-6">Car driver instructor must also have good communication skills, patience, confidence and teaching skills.</p>
           <form className="grid grid-cols-1 gap-4">
             <div className="flex gap-4">
