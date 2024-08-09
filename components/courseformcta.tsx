@@ -2,8 +2,8 @@ import React from 'react';
 
 const Formcta: React.FC = () => {
   return (
-    <section className="py-10" id='formcta'>
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center">       
+    <section className="py-10 bg-white" id='formcta'>
+      <div className="container  mx-auto px-6 flex flex-col md:flex-row items-center justify-center">       
         <div className="md:w-2/3 w-full md:pl-10">
           <h2 className="text-4xl font-bold text-orange mb-6 text-center ">Enroll <span className="text-green">Now</span> </h2>
           <p className="text-gray-600 mb-6">Car driver instructor must also have good communication skills, patience, confidence and teaching skills.</p>

@@ -84,7 +84,7 @@ const CourseCatalog: React.FC = () => {
                 <h5 className='text-gray-400 font-semibold text-lg'>OUR COURSES</h5>
                 <h3 className="text-4xl font-semibold mb-4 text-orange">{course.title}</h3>
                 <p className="text-gray-700 mb-4">{course.description}</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 mt-8 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 mt-8 gap-4 text-gray-700">
                   <div className="flex items-center space-x-1">
                     <span className="flex items-center gap-4">
                       <Image src="/icon/icon-1.png" alt="Theory Icon" width={48} height={48} /> {/* Update this path */}

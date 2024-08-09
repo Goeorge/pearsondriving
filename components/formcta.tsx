@@ -2,8 +2,8 @@ import React from 'react';
 
 const Formcta: React.FC = () => {
   return (
-    <section className="py-10" id='formcta'>
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
+    <section className="py-10 bg-white" id='formcta'>
+      <div className="container  mx-auto px-6 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 w-full mb-8 md:mb-0">
           <iframe
             className="w-full h-96 rounded-lg shadow-lg"
