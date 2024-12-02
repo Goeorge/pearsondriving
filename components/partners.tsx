@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Partners: React.FC = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
         <div className="grid grid-cols-2 ml-4 md:flex md:flex-row items-center justify-center md:space-x-12">
           <Image

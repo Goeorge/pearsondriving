@@ -32,7 +32,7 @@ const articles = [
 
 const BlogAndNews: React.FC = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-6 text-center">
         <div className="mb-10">
           <h2 className="text-green text-lg mb-2">Blog & News</h2>

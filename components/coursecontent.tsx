@@ -50,7 +50,7 @@ const CourseContent: React.FC<CourseContentProps> = ({coursecontent}) => {
             <div className="flex flex-col">
              <div>
              <div className="bg-orange text-white p-4 rounded-t-lg">
-                <div className="font-bold text-lg">FROM</div>
+              <div className="font-bold  text-lg">FROM</div>
                 <div className="text-5xl font-extrabold">{coursecontent.price}</div>
                 {/* <div className="text-lg">Per Person</div> */}
               </div>

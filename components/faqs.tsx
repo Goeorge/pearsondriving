@@ -44,7 +44,7 @@ const FAQ: React.FC = () => {
                 <span>{activeIndex === index ? '-' : '+'}</span>
               </button>
               {activeIndex === index && (
-                <div className="mt-2 p-4 bg-white rounded-lg">
+                <div className="mt-2 p-4 bg-white text-gray-700 rounded-lg">
                   {faq.answer}
                 </div>
               )}

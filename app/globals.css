@@ -49,6 +49,11 @@ body, p, span, div, a, li, button, input, textarea {
   font-family: 'Roboto', sans-serif;
 }
 
+body, p, a, li, input, textarea {
+  color: black;
+}
+
+
 /* Remove underline from all links by default */
 a, Link {
   @apply no-underline;
