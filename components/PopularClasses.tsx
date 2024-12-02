@@ -6,39 +6,64 @@ import { FaGraduationCap, FaClock } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const classes = [
+interface Course {
+  id:string;
+  title: string;
+  description: string;
+  price: string;
+  imageUrl: string;
+  theoryHours: string;
+  practicalHours: string;
+  duration: string;
+  level:string;
+}
+
+const courses: Course[] = [
   {
-    title: 'B1/B2 Driving course (Cars)',
-    description: 'This category is for B1 (Light Passenger Car) and B2 (Automatic Light Vehicle Professional)',
+    id: 'cars',
+    title: 'Class B1/B2 Driving course (Cars)',
+    description: 'Category B1/B2 Driving Course. This category is for B1 (Light Passenger Car) and B2 (Automatic Light Vehicle Professional)',
     price: 'Ksh.10,500',
+    imageUrl: '/course/course_5_1.png', // Update this path
+    theoryHours: '04 Hours',
+    practicalHours: '16 Hours',
     duration: '5 Weeks',
     level: 'Intermediate',
-    image: '/course/course_5_1.png', 
+
   },
   {
-    title: 'B3 Driving course (Vans)',
-    description: 'Standard Driving Course is a term that can refer to different types of driving courses.',
+    id: 'vans',
+    title: 'Class B3 Driving course (Vans)',
+    description: 'Category B3 Driving Course. In this course, you learn driving as a profession and be a taxi driver or a chauffer (not more than 7 passengers).',
     price: 'Ksh.8,500',
+    imageUrl: '/course/course_5_2.png', // Update this path
+    theoryHours: '04 Hours',
+    practicalHours: '16 Hours',
     duration: '5 Weeks',
     level: 'Intermediate',
-    image: '/course/course_5_6.png',
   },
   {
-    title: 'A2 Driving Course (Motorcycle)',
+    id: 'bikes',
+    title: 'Class A2 Driving Course (Motorcycle)',
     description: 'Category A2 Driving Course. This category is for A2 (Motorcycle not exceeding 400cc).',
     price: 'Ksh.8,500',
+    imageUrl: '/course/course_5_3.png', // Update this path
+    theoryHours: '04 Hours',
+    practicalHours: '16 Hours',
     duration: '2 Weeks',
     level: 'Intermediate',
-    image: '/course/course_5_3.png', 
   },
   {
+    id: 'defensive',
     title: 'Defensive Driving',
     description: 'Defensive Driving Course is made to teach you driving when the vehicle is out of control.',
-    price: 'Ksh.8,000',
+    price: 'Ksh.8,500',
+    imageUrl: '/course/course_5_4.png', // Update this path
+    theoryHours: '04 Hours',
+    practicalHours: '16 Hours',
     duration: '5 Weeks',
     level: 'Intermediate',
-    image: '/course/course_5_4.png', 
-  },
+  }
 ];
 
 const PopularClasses: React.FC = () => {
@@ -77,11 +102,11 @@ const PopularClasses: React.FC = () => {
           <p className="text-green text-lg font-semibold">Our Trending Courses</p>
         </div>
         <Slider {...settings} className="flex items-center justify-center">
-          {classes.map((classItem, index) => (
+          {courses.map((classItem, index) => (
             <div key={index} className="px-2">
-              <div className="bg-white rounded-lg shadow-lg ">
+              <div className="bg-white rounded-lg shadow-lg">
                 <div className="relative">
-                  <Image src={classItem.image} alt={classItem.title} width={400} height={300} className="object-cover w-full" />
+                  <Image src={classItem.imageUrl} alt={classItem.title} width={400} height={300} className="object-cover w-full" />
                   <div className="absolute top-2 left-2 bg-green text-white font-bold px-2 py-1 rounded">{classItem.price}</div>
                 </div>
                 <div className="p-6">
@@ -93,7 +118,7 @@ const PopularClasses: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-semibold text-orange mb-4">{classItem.title}</h3>
                   <p className="text-gray-600 mb-4">{classItem.description}</p>
-                  <Link href="#" className="inline-block border-2 border-green-100 hover:text-green text-orange py-2 px-4 rounded transition duration-300 no-underline">READ MORE →</Link>
+                  <Link href={`/courses/${classItem.id}`} className="inline-block border-2 border-green-100 hover:text-green text-orange py-2 px-4 rounded transition duration-300 no-underline">READ MORE →</Link>
                 </div>
               </div>
             </div>

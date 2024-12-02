@@ -6,7 +6,6 @@ import Formcta from '@/components/formcta'
 export default function Page() {
     return (
         <>
-          
           <Formcta />
           <ContactsCTA />
         </>
