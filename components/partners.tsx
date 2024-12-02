@@ -36,12 +36,12 @@ const Partners: React.FC = () => {
             width={115}
             height={115}
           />
-          <Image
+          {/* <Image
             src="/blog/logo-1-6.png"
             alt="logo6"
             width={115}
             height={115}
-          />
+          /> */}
           <Image
             src="/blog/logo-1-2.png"
             alt="logo7"

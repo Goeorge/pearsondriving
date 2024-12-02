@@ -33,7 +33,7 @@ const steps = [
 
 const SignUpProcess: React.FC = () => {
   return (
-    <section className="relative py-20 bg-cover bg-center" style={{ backgroundImage: `url('/hero/signup_bg.webp')` }}>
+    <section className="relative py-20 bg-cover bg-center" style={{ backgroundImage: `url('/hero/pearson driving school cars 1.jpeg')` }}>
     <div className="absolute inset-0 bg-black opacity-50"></div>
     <div className="container mx-auto flex flex-col lg:flex-row items-center relative z-10">
       <div className="lg:w-1/2 p-6 flex items-center justify-center">

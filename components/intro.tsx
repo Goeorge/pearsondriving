@@ -8,7 +8,7 @@ const Intro: FC = () => {
     <section className="bg-white p-6" id='aboutus'>
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-24">
         <div className="w-full lg:w-1/2 flex justify-center mb-6 lg:mb-0">
-          <Image src="/normal/about_3_1.png" alt="Driving School" width={500} height={500} />
+          <Image src="/pearson driving school poster.jpeg" alt="Driving School" width={500} height={500} />
         </div>
         <div className="w-full lg:w-1/2 lg:pl-10">
           <div className="mb-4 flex items-center">
