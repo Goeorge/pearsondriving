@@ -104,8 +104,8 @@ const Formcta: React.FC = () => {
         <p><strong>First Name:</strong> ${formData.name}</p>
         <p><strong>Last Name:</strong> ${formData.number}</p>
         <p><strong>Email:</strong> ${formData.email}</p>
-        <p><strong>Shipping Address:</strong> ${formData.course}</p>
-        <p><strong>State:</strong> ${formData.message}</p> 
+        <p><strong>Course of Interest:</strong> ${formData.course}</p>
+        <p><strong>Message:</strong> ${formData.message}</p> 
       `
       );
 
