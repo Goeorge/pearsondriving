@@ -16,7 +16,8 @@ const config: Config = {
       colors: {
         "orange": "#c95b20",
         "green":  "#4b6f2a",
-        "shade":"#f28841"
+        "shade":"#f28841",
+        "oramge-shade":"#faefe9"
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

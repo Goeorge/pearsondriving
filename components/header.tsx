@@ -45,7 +45,7 @@ const Header = () => {
         </div>
       </div>
       <nav
-        className={`fixed top-0 right-0 w-64 lg:w-1/2 bg-white flex flex-col justify-between items-start h-full shadow-md transform ${
+        className={`fixed top-0 right-0 w-64 lg:w-1/2 bg-white flex flex-col justify-between items-start h-full h-full transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-50 lg:ml-10 lg:relative lg:transform-none  lg:flex lg:items-center lg:justify-evenly lg:space-x-10`}>
         <ul className="flex flex-col space-y-6 p-6 lg:flex-row lg:space-y-0 lg:space-x-8 text-xl font-semibold">
@@ -69,119 +69,25 @@ const Header = () => {
               className="text-orange hover:text-green no-underline">
               Courses
             </Link>
-            {/* <ul className="absolute top-0 hidden mt-2 space-y-2 text-base font-normal bg-white shadow-lg group-hover:block">
-              <li>
-                <Link
-                  href="#refresher"
-                  className="block px-6 py-2 text-orange hover:bg-green hover:text-white">
-                  Refresher Course
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#defensive"
-                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
-                  Defensive Driving
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#motorbike"
-                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
-                  Category A-Motorbike
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#light-vehicles"
-                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
-                  Category B-Light Vehicles
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#light-trucks"
-                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
-                  Category C-Light Trucks
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#psvs"
-                  className="block px-6 py-2  text-orange hover:bg-green hover:text-white">
-                  Category D - PSVs
-                </Link>
-              </li>
-            </ul> */}
           </li>
-          {/* <li>
-            <Link
-              href="#"
-              className="text-orange hover:text-green no-underline">
-              News & Updates
-            </Link>
-          </li> */}
-          <li className="relative group">
+         
+          {/* <li className="relative group">
             <Link
               href="#help"
               className="text-orange hover:text-green no-underline">
               Help Center
             </Link>
-            {/* <ul className="absolute left-0 hidden mt-2 space-y-2 text-base font-normal bg-white shadow-lg group-hover:block">
-              <li>
-                <Link
-                  href="#prices"
-                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
-                  Prices
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#payment-options"
-                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
-                  Payment Options
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#registration"
-                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
-                  Registration
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#faq"
-                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#news-updates"
-                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
-                  News & Updates
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#downloads"
-                  className="block px-4 py-2 text-orange-500 hover:bg-green-500 hover:text-white">
-                  Downloads
-                </Link>
-              </li>
-            </ul> */}
-          </li>
+          </li> */}
           <li>
             <Link
-              href="#aboutus"
+              href="about-us"
               className="text-orange hover:text-green no-underline">
               About Us
             </Link>
           </li>
           <li>
             <Link
-              href="#formcta"
+              href="/contact-us"
               className="text-orange hover:text-green no-underline">
               Contact
             </Link>

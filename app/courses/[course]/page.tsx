@@ -4,6 +4,8 @@
 import React from 'react';
 import { useParams } from 'next/navigation';
 import CourseContent from '@/components/coursecontent';
+import CourseFormCTA from '@/components/courseformcta';
+import Stats from '@/components/stats';
 
 type Course = {
   id:string;
@@ -95,6 +97,8 @@ const CoursePage: React.FC = () => {
   return (
     <div>
       {content}
+      <Stats />
+      <CourseFormCTA />
     </div>
   );
 };

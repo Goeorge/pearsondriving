@@ -18,11 +18,12 @@ const TopHeader: React.FC = () => {
         </div>
         <div className="flex items-center space-x-1">
           <MdEmail className="text-xl text-orange" />
-          <span className=' text-white'>pearsondriving@gmail.com</span>
+          <span className=' text-white'>info@pearsondrivingschool.co.ke</span>
+          
         </div>
         <div className="flex items-center justify-center space-x-1">
           <MdPhone className="text-xl text-orange " />
-          <span className='flex items-center justify-center text-white text-base font-semibold cursor-pointer'>(+254)733 340082</span>
+          <span className='flex items-center justify-center text-white text-base font-semibold cursor-pointer'>074 683 4612</span>
         </div>
       </div>
     </div>

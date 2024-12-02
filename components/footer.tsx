@@ -6,7 +6,7 @@ import { SlCalender } from "react-icons/sl";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-50 py-20">
+    <footer className="bg-oramge-shade py-20">
       <div className="container mx-auto px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">About Company</h3>

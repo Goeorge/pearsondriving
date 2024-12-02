@@ -43,14 +43,14 @@ const classes = [
 
 const PopularClasses: React.FC = () => {
   const settings = {
-    dots: false,
-    arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -70,18 +70,18 @@ const PopularClasses: React.FC = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-20" id='courses'>
-      <div className="container mx-8">
+    <section className="bg-gray-100 py-12" id='courses'>
+      <div className="max-w-7xl mx-auto px-4 text-center">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold text-orange mb-4">Our Popular Driving Courses</h2>
           <p className="text-green text-lg font-semibold">Our Trending Courses</p>
         </div>
-        <Slider {...settings}>
+        <Slider {...settings} className="flex items-center justify-center">
           {classes.map((classItem, index) => (
             <div key={index} className="px-2">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-white rounded-lg shadow-lg ">
                 <div className="relative">
-                  <Image src={classItem.image} alt={classItem.title} width={500} height={400} className="object-cover w-full" />
+                  <Image src={classItem.image} alt={classItem.title} width={400} height={300} className="object-cover w-full" />
                   <div className="absolute top-2 left-2 bg-green text-white font-bold px-2 py-1 rounded">{classItem.price}</div>
                 </div>
                 <div className="p-6">

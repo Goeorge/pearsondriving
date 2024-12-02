@@ -1,10 +1,10 @@
 import React from 'react';
 
 const stats = [
-  { value: '5,400+', label: 'Learn From Here' },
-  { value: '1,350+', label: 'Alumni Students' },
-  { value: '10+', label: 'Expert Instructor' },
-  { value: '20+', label: 'Best Award Win' },
+  { value: '154+', label: 'Currently Learning' },
+  { value: '850+', label: 'Alumni Students' },
+  { value: '5+', label: 'Expert Instructor' },
+  { value: '8+', label: 'Best Award Win' },
 ];
 
 const Stats: React.FC = () => {

@@ -128,7 +128,7 @@ const CourseCatalog: React.FC = () => {
                 <Link href={`/courses/${course.id}`} className="w-full bg-green text-white text-center px-4 py-2 rounded hover:bg-orange transition duration-300 no-underline">
                   LEARN MORE →
                 </Link>
-                <Link href='/enroll' className="w-full bg-green text-white text-center px-4 py-2 rounded hover:bg-orange transition duration-300 no-underline">
+                <Link href={`/courses/${course.id}#formcta`} className="w-full bg-green text-white text-center px-4 py-2 rounded hover:bg-orange transition duration-300 no-underline">
                   ENROLL NOW →
                 </Link>
                 </div>

@@ -38,9 +38,9 @@ const AboutUs: FC = () => {
               Affordable Rates: Quality driving education doesn’t have to be expensive. We provide competitive pricing and flexible payment plans to make our courses accessible to everyone.
             </li>
           </ul>
-          <Link href="#" className="inline-block bg-green text-white py-2 px-4 rounded hover:bg-orange transition duration-300 no-underline">
+          {/* <Link href="/about-us" className="inline-block bg-green text-white py-2 px-4 rounded hover:bg-orange transition duration-300 no-underline">
             ABOUT MORE →
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

@@ -12,6 +12,7 @@ import FormCTA from '@/components/formcta';
 import BlogAndNews from '@/components/blogandnews';
 import Partners from '@/components/partners';
 import ContactsCTA from '@/components/contactscta';
+import Intro from '@/components/intro';
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
-        <AboutUs />
+        <Intro />
         <PopularClasses />
         <Stats />
         <FAQ />
